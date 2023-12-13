@@ -1,0 +1,407 @@
+.body
+{
+    font-family: 'Roboto';
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+header
+{
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 1;
+    padding-bottom: 10px;
+    border-bottom: #e8e8e8 solid 1px;
+}
+h1
+{
+    font-weight: bolder;
+    font-size: 32px;
+}
+h5
+{
+    font-weight:bold;
+    font-size: 16px;
+}
+red
+{
+    color: red;
+}
+
+/*----------------------------Navigation----------------------------*/
+.navigation-bar
+{
+    padding-top: 10px;
+    height: 35px;
+    margin: auto;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+nav
+{
+    margin: 5px;
+    flex: 3;
+    font-size: 16px;
+}
+
+.logo, .cart, .navlist, .showcase
+{
+    display: flex;
+}
+
+.logo
+{   
+    padding-top: 5px; 
+    margin: 5px;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.cart
+{
+    padding-top: 5px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.navlist
+{
+    justify-content:space-around;
+    list-style: none;
+}
+
+#navlink
+{   font-family: Roboto;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.dropdown 
+{   
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: Roboto;
+    margin: 0;
+}
+  
+.dropdown-content 
+{
+   display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    text-align: left;
+    color: #c95eff;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+
+a[id = ISO-Button]
+{
+    text-decoration: none;
+    color: #4f4f4f;
+}
+a[id = ISO-Button]:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+/*----------------------------Main----------------------------*/
+.presentation
+{
+    font-family: Roboto;
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.feature-bg
+{
+    font-family: Roboto;
+    background-color: #fafafa;
+    margin: 0;
+    border: 0;
+    padding-bottom: 10px;
+}
+.features-wrapper
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.feature-heading
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*----------------------------Text and Button----------------------------*/
+.intro
+{
+    flex: 2;
+}
+
+.intro-text
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.button
+{
+    text-align: left;
+}
+
+button
+{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: lighter;
+    margin-right: 2px;
+    padding: 10px;
+}
+
+button[class = ISO-Layout-button]
+{
+    background-color: transparent;
+    border: #c95eff solid 2px;
+}
+
+button[class = ISO-Layout-button]:hover 
+{
+    background-color: #d278ff;
+    border: #c95eff solid 2px;
+    color: white;
+}
+
+button[class = cart-add-button]
+{
+    background-color: #d278ff;
+    border: #c95eff solid 2px;
+    text-decoration: none;
+    color: white;
+}
+button[class = cart-add-button]:hover
+{
+    background-color: transparent;
+    border: #c95eff solid 2px;
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+/*----------------------------Picture----------------------------*/
+.showcase-picture
+{
+    margin: 40px;
+    flex: 2;
+    justify-content: center;
+    display: grid;
+}
+.showcase-picture img 
+{
+    filter: drop-shadow(0px 8px 4px black);
+    animation: side 1.5s ease;
+    min-width: 330px;
+    max-width: 45vw;
+    min-height: 125px;
+    max-height: 30vh;
+}
+
+/*Animation*/
+@keyframes side
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*----------------------------Features----------------------------*/
+.features-wrapper
+{
+    padding-bottom: 30px;
+}
+
+.features-icons-1and2, .features-icons-3and4
+{
+    display: inline-block;
+    vertical-align: top;
+    display: flex;
+    text-align: center;
+}
+
+.feature-icons-1, .feature-icons-2, .feature-icons-3, .feature-icons-4
+{
+    flex: 1; 
+    display: flex;
+    margin: auto;
+}
+
+/*Pictures*/
+.feature-layout-transparent, .feature-aluminium-body, .feature-devices, .feature-hot-swappable
+{
+    align-items: center;
+    flex: 1; 
+    margin-bottom: 15px;
+}
+
+.feature-max-windows, .feature-optical-switches, .feature-type-c, .feature-ultra-slim
+{
+    align-items: center;
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+/*----------------------------Bildschirmbreite----------------------------*/
+@media screen and (max-width: 1800px)
+{
+    .feature-icons-4
+    {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1600px)
+{
+    .feature-icons-1
+    {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1300px)
+{
+    .presentation
+    {
+        flex-direction: column;
+        height: 600px;
+    }
+    .feature-icons-1, .feature-icons-2, .feature-icons-3, .feature-icons-4
+    {
+        flex-direction: column;
+    }
+    .intro
+    {
+        margin-top: 2vh;
+        text-align: center;
+    }
+    .showcase-picture
+    {
+        margin-top: 2vh;
+        flex: 15;
+    }
+    .features-wrapper
+    {
+        width: 40%;
+    }
+    .button
+    {
+        text-align: center;
+    }
+    .intro-text
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    .presentation
+    {
+        flex-direction: column;
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .presentation
+    {
+        flex-direction: column;
+        height: 550px;
+    }
+
+    .features-icons-1and2, .features-icons-3and4
+    {
+        flex-direction: column;
+    }
+
+    .ISO-Layout-button, .cart-add-button
+    {
+        margin-right: 1.5px;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .navlist
+    {
+        padding: 4px;
+    }
+
+    .ISO-Layout-button, .cart-add-button
+    {
+        margin-right: 1px;
+        padding: 6px;
+        font-size: 16px;
+    }
+
+    .navigation-bar
+    {
+        width: 80%;
+        background-color: white;
+    }
+
+    .showcase-picture
+    {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .presentation
+    {
+        height: 800px;
+    }
+}

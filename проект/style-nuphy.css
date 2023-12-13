@@ -1,0 +1,245 @@
+body
+{
+    font-family: 'Roboto';
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+header
+{   font-family: Roboto;
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 1;
+    padding-bottom: 10px;
+    border-bottom: #e8e8e8 solid 1px;
+}
+h1
+{
+    font-weight: bolder;
+    font-size: 32px;
+}
+h2
+{
+    font-weight: lighter;
+}
+h5
+{
+    font-weight:bold;
+    font-size: 16px;
+}
+hr
+{
+    border: #e8e8e8 solid 1px;
+    margin: 0;
+}
+
+red
+{
+    color: red;
+}
+
+/*----------------------------Navigation----------------------------*/
+.navigation-bar
+{   
+    padding-top: 10px;
+    height: 35px;
+    margin: auto;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    
+}
+
+nav
+{
+    flex: 3;
+    font-size: 16px;
+}
+
+.logo, .cart, .navlist, .showcase
+{
+    display: flex;
+}
+
+.logo
+{   
+    padding-top: 5px; 
+    margin: 5px;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.cart
+{
+    padding-top: 5px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.navlist
+{
+    justify-content:space-around;
+    list-style: none;
+}
+
+#navlink
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+.dropdown 
+{
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.dropdown-content 
+{
+   display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    text-align: left;
+    color: #c95eff;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+/*----------------------------Slides----------------------------*/
+.carousel-container
+{
+    width: 95vw;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.slide
+{
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+#prvButton
+{
+    font-size: 40px;
+    top: 50%;
+    z-index: 10;
+    left: 2%;
+    color: black; 
+    opacity: .5;
+    position: absolute;
+    cursor: pointer;
+}
+
+#nextButton
+{
+    font-size: 40px;
+    top: 50%;
+    z-index: 10;
+    right: 2%;
+    color: black; 
+    opacity: .5;
+    position: absolute;
+    cursor: pointer;
+}
+/*----------------------------Product Info----------------------------*/
+.productInfo
+{
+    margin: auto;
+    width: 80vw;
+    height: 800px;
+    display: flex;
+}
+
+.options
+{
+    flex: 1;
+    border: #4f4f4f solid 1px;
+}
+
+.picture
+{
+    flex: 1;
+    border: #c95eff solid 1px;
+} 
+
+
+button
+{
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 2px;
+    margin-right: 2px;
+    padding: 10px;
+}
+
+button[class = whiteBacklight]
+{
+    background-color: transparent;
+    border: #c95eff solid 2px;
+}
+
+button[class = rgbBacklight]
+{
+    background-color: transparent;
+    border: #c95eff solid 2px;
+}
+
+button[class = whiteBacklight]:hover
+{
+    background-color: #d278ff;
+    border: #c95eff solid 2px;
+    color: white;
+}
+
+button[class = rgbBacklight]:hover
+{
+    background-color: #d278ff;
+    border: #c95eff solid 2px;
+    color: white;
+}
+
+
+/*----------------------------Bildschirmbreite----------------------------*/
+@media screen and (max-width: 700px)
+{
+    .navlist
+    {
+        padding: 4px;
+    }
+
+    .navigation-bar
+    {
+        width: 80%;
+        background-color: white;
+    }
+}

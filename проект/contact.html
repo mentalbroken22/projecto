@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "./style-contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">                                        
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">  
+    <title>PBoards</title>
+</head>
+<body>
+    <header>
+        <div class = "navigation-bar">
+            <div class = "logo">            <!--Logo directs to the start-page-->
+                <a href = "start.html">
+                    <img alt = "Logo" src = "pics/Logo.png" width = "60px" height = "auto">
+                </a>
+            </div>
+            <nav>
+                <ul class = "navlist">
+                    <li>
+                        <a id = "navlink" href="#">
+                            <div class="dropdown">
+                                Товары
+                                <div class="dropdown-content">
+                                    <a href = "K3.html"><red>НОВИНКА</red> Keychron K3 (Предзаказ)</a>
+                                    <a href = "K4.html"><red>Скидка 15%</red> Keychron K4 </a>
+                                    <a href = "Varmilo.html">Varmilo Shurikey Saizo 003</a>
+                                    <a href = "Nuphy.html">NuPhy Halo 75</a>
+                                    <a href = "DP.html">Dark Project KDA87</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a  id = "navlink" href="contact.html">Свяжись с нами</a></li>
+                        <li><a  id = "navlink" href="acses.html">Акссесуары</a></li>
+                        <li><a  id = "navlink" href="acc.html">Ваш Аккаунт</a></li>
+                </ul>
+            </nav>
+            <div class = "cart">
+                <a href = "#">
+                    <img alt = "cart" src = "pics/Shopping-Cart.png" width = "30px" height = "auto">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <dib class = "contactformular">
+            <div class = "container">
+                <form method = "post" name = "myemailform" action = "form-to-email.php">
+                    <label for = "fname">Имя</label><br>
+                    <input type = "text" id = "fname" name = "firstname" placeholder = "Ваше имя.."><br>
+                    <label for = "lname">Фамилия</label><br>
+                    <input type = "text" id = "lname" name = "lastname" placeholder = "Ваша Фамилия.."><br>
+                    <label for = "country">Страна</label><br>
+                    <input type = "text" id = "Cname" name = "country" placeholder = "Ваша страна.."><br>
+                    <label for = "lname">E-Mail</label><br>
+                    <input type = "text" id = "email" name = "email" placeholder = "Ваш E-Mail.."><br>
+                    <label for = "subject">Описание</label><br>
+                    <textarea id = "subject" name = "subject" placeholder = "Пожелания.." style = "height:200px"></textarea><br>
+                    <input type = "submit" value = "Отправить">
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class = "impressum">
+        <h6>PBoards<br/>
+        Новочеркасск ул.Пушкина 47<br/>
+        Телефон : +7 918 345 21 24</h6>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> <!--Arrow Icons-->
+    <link rel = "stylesheet" type = "text/css" href = "./style-k3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">                                       
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">  
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+    <title>PBoards-K3</title>
+</head>
+
+<body>
+    <header>
+        <div class = "navigation-bar">
+            <div class = "logo">            
+                <a href = "start.html">
+                    <img alt = "Logo" src = "pics/Logo.png" width = "60px" height = "auto">
+                </a>
+            </div>
+            <nav>
+                <ul class = "navlist">
+                    <li>
+                        <a id = "navlink" href="#">
+                            <div class="dropdown">
+                                Товары
+                                <div class="dropdown-content">
+                                    <a href = "K3.html"><red>НОВИНКА</red> Keychron K3 (Предзаказ)</a>
+                                    <a href = "K4.html"><red>Скидка 15%</red> Keychron K4 </a>
+                                    <a href = "Varmilo.html">Varmilo Shurikey Saizo 003</a>
+                                    <a href = "Nuphy.html">NuPhy Halo 75</a>
+                                    <a href = "DP.html">Dark Project KDA87</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a  id = "navlink" href="contact.html">Свяжись с нами</a></li>
+                        <li><a  id = "navlink" href="acses.html">Акссесуары</a></li>
+                        <li><a  id = "navlink" href="acc.html">Ваш Аккаунт</a></li>
+                </ul>
+            </nav>
+            <div class = "cart">
+                <a href = "#">
+                    <img alt = "cart" src = "pics/Shopping-Cart.png" width = "30px" height = "auto">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class = "carousel-container">          <!--Image slides -->
+
+            <i class="fas fa-chevron-left" id = "prvButton"></i>        <!--left arrow button-->
+            <i class="fas fa-chevron-right" id =  "nextButton"></i>     <!--right arrow button-->
+
+            <div class = "slide">
+                <img src= "pics/K3.png" id = "lastClone">
+                <img src= "pics/K32.png">
+                <img src= "pics/K33.png" id = "firstClone">
+            </div>
+        </div>
+        <script src = "slider.js"></script>
+
+        <div class = "productInfo">
+            <div class =  "picture">
+                <img src= "pics/K3-2 abc.png" alt="Description" width="1083" height="660">
+            </div>
+            <div class = "options">
+                <h1>Keychron K3 Ultra-slim<br> Wireless Mechanical Keyboard</h1>
+                <a style = "font-size:26px">$75</a>
+                <br><br>
+                <hr>  
+                <br>
+                <br>
+                <button class="whiteBacklight" style="width:110px;height:80px;">Заказать</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
